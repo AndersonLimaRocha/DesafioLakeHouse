@@ -2,6 +2,14 @@
 Repositório criado para o Construção de um Lake House
 Extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
 
+## Entregáveis: 
+* **Desenho da Arquitetura Lakehouse** - Documento descrevendo o ambiente e tecnologias que serão utilizadas no projeto.
+* **Pipeline_Superlogica.py** - Arquivo de parametrização de uma DAG do Airflow.
+* **ExtracaoValidacao.py** - Script de Extração da base de dados PostgreSQL e processamento no Spark, que será orquestrado pelo Airflow
+* **TransformacaoCalculo.py** - Script das transformações e cálculos de transações que será orquestrado pelo Airflow em sequencia ao script acima.
+* **Subir os Serviços Docker do Desafio** - Arquivo detalhando os comandos e passos para subir os serviços Docker do projeto
+
+
 ### Tecnologias Utilizadas
 *	**Docker**: Plataforma para criação de ambientes isolados e replicáveis para cada aplicação.
 *	**Python**: Linguagem de programação utilizada para escrever os scripts e definir as tarefas.
@@ -26,7 +34,7 @@ Antes de executar o projeto, instale os seguintes pacotes e ferramentas:
 * **smtplib, MIMEMultipart, MIMEText**: Para envio de e-mails com os logs do processo.
 * **os**: Para manipulação de caminhos de arquivos.
 
-### 2.Scripts do Processo**
+### 2.Scripts do Processo
 * **Script - Calculos e Transformacoes.ipynb** - Script de Extração da base de dados PostgreSQL e processamento no Spark
 * **Funções**: 
 ** **send_email** - Esta função é responsável por enviar os logs de sucesso ou falha do processo para um e-mail especificado.
