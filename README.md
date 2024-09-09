@@ -6,8 +6,8 @@ objetivo a extração de dados de um banco de dados PostgreSQL, validação e sa
 1. Dependências
 As bibliotecas e pacotes utilizados no script incluem:
 
-warnings: Para desabilitar avisos irrelevantes.
-pyspark: Para criação de sessões Spark, manipulação e processamento de dados.
+* #### warnings: Para desabilitar avisos irrelevantes.
+* #### pyspark: Para criação de sessões Spark, manipulação e processamento de dados.
 pandas: Para manipulação de logs.
 smtplib, MIMEMultipart, MIMEText: Para envio de e-mails com os logs do processo.
 os: Para manipulação de caminhos de arquivos.
