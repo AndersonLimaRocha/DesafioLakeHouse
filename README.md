@@ -64,4 +64,7 @@ Antes de executar o projeto, instale os seguintes pacotes e ferramentas:
 └── parquet_files/
 
 
-Finalização: Após a execução do pipeline, a sessão Spark é encerrada.
+## Referencia de IA's: 
+* **Chat GPT** - para sugestão e automatização de códigos
+* **Gamma App** - para agilizar customização e criação de apresentações
+
