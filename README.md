@@ -8,6 +8,8 @@ Extração de dados de um banco de dados PostgreSQL, validação e salvamento no
 * **ExtracaoValidacao.py** - Script de Extração da base de dados PostgreSQL e processamento no Spark, que será orquestrado pelo Airflow
 * **TransformacaoCalculo.py** - Script das transformações e cálculos de transações que será orquestrado pelo Airflow em sequencia ao script acima.
 * **Subir os Serviços Docker do Desafio** - Arquivo detalhando os comandos e passos para subir os serviços Docker do projeto
+* **Script de criação e carga da massa de dados nas tabelas.sql** Script utilizado para criar tabelas e inserir massa de teste na base PostgreSQL
+* **requirements.txt** - Arquivo para instalação das bibliotecas Python utilizados no projeto.
 
 
 ### Tecnologias Utilizadas
