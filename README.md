@@ -3,13 +3,13 @@ Repositório criado para o Desafio de Engenheiro de Dados da Superlogica
 objetivo a extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
 
 ### Tecnologias Utilizadas
-•	**Docker**: Plataforma para criação de ambientes isolados e replicáveis para cada aplicação.
-•	**Python**: Linguagem de programação utilizada para escrever os scripts e definir as tarefas.
-•	**PostgreSQL**: Banco de dados relacional utilizado para armazenar metadados e informações sobre as execuções.
-•	**Airflow**: Plataforma de orquestração de workflows para definir, programar e monitorar pipelines de dados.
-•	**Spark**: Framework de processamento de grandes volumes de dados, utilizado para tarefas de ETL e análise de dados.
-•	**VS Code**: Editor de código versátil com extensões para facilitar o desenvolvimento em Python e integração com outras ferramentas.
-•	**GitHub**: Plataforma de controle de versão utilizada para gerenciar o código fonte e colaborar em equipe.
+*	**Docker**: Plataforma para criação de ambientes isolados e replicáveis para cada aplicação.
+*	**Python**: Linguagem de programação utilizada para escrever os scripts e definir as tarefas.
+*	**PostgreSQL**: Banco de dados relacional utilizado para armazenar metadados e informações sobre as execuções.
+*	**Airflow**: Plataforma de orquestração de workflows para definir, programar e monitorar pipelines de dados.
+*	**Spark**: Framework de processamento de grandes volumes de dados, utilizado para tarefas de ETL e análise de dados.
+*	**VS Code**: Editor de código versátil com extensões para facilitar o desenvolvimento em Python e integração com outras ferramentas.
+*	**GitHub**: Plataforma de controle de versão utilizada para gerenciar o código fonte e colaborar em equipe.
 ![image](https://github.com/user-attachments/assets/3e6470d8-9d8b-43cd-b824-3a92955ecdb1)
 
 ### 1.Requisitos 
