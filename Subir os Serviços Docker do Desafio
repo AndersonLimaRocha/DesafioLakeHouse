@@ -1,0 +1,15 @@
+Docker PostgreSQL: 
+Executar o comando abaixo para subir o serviço Docker do PostgreSQL
+Onde: /Users/familialima/DockerDatabasePostgreSQL é o caminho onde foi salvo os Datafiles do Postgre. 
+docker run -p 5432:5432 -v /Users/familialima/DockerDatabasePostgreSQL:/var/lib/postgresql/data -e POSTGRES_PASSWORD=1234 postgres
+
+Docker Apache Airflow
+Raiz de instalação - /opt/airflow
+Para subir os serviços do apache airflow: 
+utilizar os comandos no terminal: docker-compose up airflow-init
+Para subir o Webservice executar o comando no terminal: docker-compose up 
+para baixar o serviços e apagar a imagem do apache airflow: 
+
+
+# Endereço para baixar Postgre JDBC:  https://jdbc.postgresql.org/download/
+# Referencia para baixar e iniciar postgresql via docker: https://felixgilioli.medium.com/como-rodar-um-banco-de-dados-postgres-com-docker-6aecf67995e1
