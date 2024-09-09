@@ -10,7 +10,7 @@ objetivo a extração de dados de um banco de dados PostgreSQL, validação e sa
 *	**Spark**: Framework de processamento de grandes volumes de dados, utilizado para tarefas de ETL e análise de dados.
 *	**VS Code**: Editor de código versátil com extensões para facilitar o desenvolvimento em Python e integração com outras ferramentas.
 *	**GitHub**: Plataforma de controle de versão utilizada para gerenciar o código fonte e colaborar em equipe.
-![image](https://github.com/user-attachments/assets/3e6470d8-9d8b-43cd-b824-3a92955ecdb1)
+
 
 ### 1.Requisitos 
 Antes de executar o projeto, instale os seguintes pacotes e ferramentas: 
