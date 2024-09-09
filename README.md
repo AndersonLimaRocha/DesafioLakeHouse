@@ -1,6 +1,6 @@
-# DesafioSuperLogica
-Repositório criado para o Desafio de Engenheiro de Dados da Superlogica
-objetivo a extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
+# Desafio Arquitetura Lake House
+Repositório criado para o Construção de um Lake House
+Extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
 
 ### Tecnologias Utilizadas
 *	**Docker**: Plataforma para criação de ambientes isolados e replicáveis para cada aplicação.
