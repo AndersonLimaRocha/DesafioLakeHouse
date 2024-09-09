@@ -1,10 +1,20 @@
 # DesafioSuperLogica
 Repositório criado para o Desafio de Engenheiro de Dados da Superlogica
 objetivo a extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
-“Requisitos ---------- Antes de executar o projeto, instale os seguintes pacotes e ferramentas: * **Apache Spark** (versão compatível com PySpark) * **Java 8 ou superior** * **PostgreSQL JDBC Driver** * **Python 3.x** * Pacotes Python: * `pyspark` * `pandas` * `smtplib` * `email`”
+
+### Requisitos 
+Antes de executar o projeto, instale os seguintes pacotes e ferramentas: * **Apache Spark** (versão compatível com PySpark) 
+* **Java 8 ou superior**
+* **PostgreSQL JDBC Driver**
+* **Python 3.x**
+* Pacotes Python:
+* `pyspark`
+* `pandas`
+* `smtplib`
+* `email`”
 
 ### Estrutura
-1. **Dependências**
+1. #### Dependências
 As bibliotecas e pacotes utilizados no script incluem:
 
 * **warnings**: Para desabilitar avisos irrelevantes.
