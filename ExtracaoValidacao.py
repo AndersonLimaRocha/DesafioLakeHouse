@@ -155,9 +155,9 @@ tables = [
 ]
 
 # Informações de e-mail
-recipient_email = "andersonlimarocha@gmail.com"
-sender_email = "and.al@hotmail.com"
-sender_password = 'Nov@S&nh@2024' 
+recipient_email = ""
+sender_email = ""
+sender_password = '' 
 
 # Executar o processo
 logs = run(tables, jdbc_url, db_properties, sparkjdbcdrivepath, data_lake_path, recipient_email, sender_email, sender_password)
