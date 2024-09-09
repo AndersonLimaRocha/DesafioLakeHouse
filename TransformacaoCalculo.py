@@ -92,9 +92,9 @@ def run_transformacoes(silverzonepath,subject, body, recipient_email, sender_ema
 
 # %%
 # Informações de e-mail
-recipient_email = "andersonlimarocha@gmail.com"
-sender_email = "and.al@hotmail.com"
-sender_password = 'Nov@S&nh@2024' 
+recipient_email = ""
+sender_email = ""
+sender_password = '' 
 subject = "Logs do Processo de Calculo e Transformação"
 body = f"Aqui estão os logs do processo de extração e validação:"
 smtp_server = "smtp-mail.outlook.com"
