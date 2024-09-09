@@ -36,4 +36,12 @@ Antes de executar o projeto, instale os seguintes pacotes e ferramentas:
 
 * **Transformações e Cálculos**: Após a extração dos dados, as funções de cálculo e agregação são executadas, gerando novos arquivos Parquet com os resultados. O pipeline de transformação finaliza com o envio de um e-mail contendo os logs do processo.
 
+#### Estrutura
+.
+├── README.md
+├── requirements.txt
+├── script.py
+└── parquet_files/
+
+
 Finalização: Após a execução do pipeline, a sessão Spark é encerrada.
