@@ -2,30 +2,38 @@
 Repositório criado para o Desafio de Engenheiro de Dados da Superlogica
 objetivo a extração de dados de um banco de dados PostgreSQL, validação e salvamento no formato Parquet em um Data Lake, além de realizar transformações e cálculos sobre os dados extraídos. O script também inclui a funcionalidade de enviar logs de processo por e-mail.
 
-### Requisitos 
-Antes de executar o projeto, instale os seguintes pacotes e ferramentas: * **Apache Spark** (versão compatível com PySpark) 
+### 1.Requisitos 
+Antes de executar o projeto, instale os seguintes pacotes e ferramentas: 
+* **Apache Spark** (versão compatível com PySpark) 
 * **Java 8 ou superior**
 * **PostgreSQL JDBC Driver**
 * **Python 3.x**
+  
 * Pacotes Python:
-* `pyspark`
-* `pandas`
-* `smtplib`
-* `email`”
-
-### Estrutura
-1. #### Dependências
-As bibliotecas e pacotes utilizados no script incluem:
-
 * **warnings**: Para desabilitar avisos irrelevantes.
 * **pyspark**: Para criação de sessões Spark, manipulação e processamento de dados.
 * **pandas**: Para manipulação de logs.
 * **smtplib, MIMEMultipart, MIMEText**: Para envio de e-mails com os logs do processo.
 * **os**: Para manipulação de caminhos de arquivos.
 
-2. **Scripts do Processo**
+### 2.Scripts do Processo**
 * **Script - Calculos e Transformacoes.ipynb** - Script de Extração da base de dados PostgreSQL e processamento no Spark
 * **Funções**: 
 ** **send_email** - Esta função é responsável por enviar os logs de sucesso ou falha do processo para um e-mail especificado.
 ** **extract_and_validate_to_parquet** - Esta função realiza a extração de dados de uma tabela no banco de dados PostgreSQL, valida os dados e armazena os resultados no formato Parquet em um Data Lake.
-** run
+** **run** - Executa o processo de extração e validação para uma lista de tabelas e envia os logs gerados por e-mail.
+
+* **Script - Calculos e Transformacoes.ipynb** - Script das transformações e cálculos de transações.
+* **Funções**:
+* **calcular_total_transacoes_por_condominio** - Calcula o valor total das transações realizadas por cada morador e salva os resultados no formato Parquet.
+* **calcular_valor_total_transacoes_por_morador** - Calcula o valor total das transações realizadas por cada morador e salva os resultados no formato Parquet.
+* **agregar_transacoes_diarias_por_tipo_imovel** - Agrega as transações diárias por tipo de imóvel e salva os resultados no formato Parquet.
+
+### 3.Fluxo Principal
+* **Configurações de Conexão**: O script define as configurações de conexão com o banco de dados PostgreSQL e o caminho do Data Lake onde os arquivos serão armazenados.
+
+* **Execução da Extração e Validação**: A função run é executada para cada tabela, realizando a extração e salvamento dos dados no formato Parquet. Os logs são armazenados e enviados por e-mail.
+
+* **Transformações e Cálculos**: Após a extração dos dados, as funções de cálculo e agregação são executadas, gerando novos arquivos Parquet com os resultados. O pipeline de transformação finaliza com o envio de um e-mail contendo os logs do processo.
+
+Finalização: Após a execução do pipeline, a sessão Spark é encerrada.
